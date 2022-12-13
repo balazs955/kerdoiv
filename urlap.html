@@ -8,12 +8,12 @@
     <title>Kérdőív</title>
 </head>
 <body>
-    <form>
-        <label for="cim">Hánya ország csapata indult összesen a 2022-es VB-n?</label><br>
-        <input type="text" id="cim"><br><br>
-        <label for="kieso">Melyik csapat esett ki legelőször?</label><br>
-        <input type="text" id=kieso"><br><br>
-        <label for="nap">Hányadikára esik a VB döntő? (2022 december)</label><br>
+    <form onsubmit="return(mennyiJo())">
+        <p>Hánya ország csapata indult összesen a 2022-es VB-n?</p>
+        <input type="text" id="csapat">
+        <p>Melyik csapat esett ki legelőször?</p>
+        <input type="text" id="kieso">
+        <p>Hányadikára esik a VB döntő? (2022 december)</p>
         <input type="text" id="nap"><br><br>
         <p>Kylian Mbappe a vb legjobb gólszerzője?</p>
         <input type="radio" id="elsoI" name="igaz">
@@ -32,7 +32,8 @@
         <label for="css">Hamis</label><br>
         <p>Kattints a Beküldés gombra hogy megtudjad az eredményedet</p>
         <input type="submit" value="Beküldés">
-      </form>
+    </form>
+      <p id="count"></p>
     <script src="urlap.js"></script>
 </body>
 </html>
