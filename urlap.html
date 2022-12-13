@@ -8,17 +8,31 @@
     <title>Kérdőív</title>
 </head>
 <body>
-    <form onsubmit="return(mennyiJo())">
-        <p>Hánya ország csapata indult összesen a 2022-es VB-n?</p>
-        <input type="text" id="csapat">
-        <p>Melyik csapat esett ki legelőször?</p>
-        <input type="text" id="kieso">
-        <p>Hányadikára esik a VB döntő? (2022 december)</p>
+    <form>
+        <label for="cim">Hánya ország csapata indult összesen a 2022-es VB-n?</label><br>
+        <input type="text" id="cim"><br><br>
+        <label for="kieso">Melyik csapat esett ki legelőször?</label><br>
+        <input type="text" id=kieso"><br><br>
+        <label for="nap">Hányadikára esik a VB döntő? (2022 december)</label><br>
         <input type="text" id="nap"><br><br>
-        <input type="submit" value="Beküld">
+        <p>Kylian Mbappe a vb legjobb gólszerzője?</p>
+        <input type="radio" id="elsoI" name="igaz">
+        <label for="html">Igaz</label><br>
+        <input type="radio" id="elsoH" name="hamis">
+        <label for="css">Hamis</label><br>
+        <p>Argentína a legesélyesebb a VB megnyeréséhez?</p>
+        <input type="radio" id="masodikI" name="igaz">
+        <label for="html">Igaz</label><br>
+        <input type="radio" id="masodikH" name="hamis">
+        <label for="css">Hamis</label><br>
+        <p>A negyeddöntőben 2 mérkőzésben büntető rugásokkal döntötték-el a továbbjutókat?</p>
+        <input type="radio" id="harmadikI" name="igaz">
+        <label for="html">Igaz</label><br>
+        <input type="radio" id="harmadikH" name="hamis">
+        <label for="css">Hamis</label><br>
+        <p>Kattints a Beküldés gombra hogy megtudjad az eredményedet</p>
+        <input type="submit" value="Beküldés">
       </form>
-      
-<p id="count"></p>
     <script src="urlap.js"></script>
 </body>
 </html>
