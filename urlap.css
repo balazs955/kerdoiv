@@ -13,9 +13,8 @@ input[type=submit]{
 body {
     background-image: url(vb.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
     color: azure;
     font-size: large;
     height: 100%;
-    width: 100%;
+    width: 90%;
 }
